@@ -19,9 +19,9 @@ env:
     PLUGIN_CODE=MailTemplateEditor
   matrix:
       # ec-cube master
-      - ECCUBE_VERSION=master DB=mysql USER=root DBNAME=myapp_test DBPASS=' ' DBUSER=root
-      - ECCUBE_VERSION=master DB=pgsql USER=postgres DBNAME=myapp_test DBPASS=password DBUSER=postgres
-      - ECCUBE_VERSION=master DB=sqlite
+      - ECCUBE_VERSION=3.0 DB=mysql USER=root DBNAME=myapp_test DBPASS=' ' DBUSER=root
+      - ECCUBE_VERSION=3.0 DB=pgsql USER=postgres DBNAME=myapp_test DBPASS=password DBUSER=postgres
+      - ECCUBE_VERSION=3.0 DB=sqlite
       # ec-cube 3.0.11
       - ECCUBE_VERSION=3.0.11 DB=mysql USER=root DBNAME=myapp_test DBPASS=' ' DBUSER=root
       - ECCUBE_VERSION=3.0.11 DB=pgsql USER=postgres DBNAME=myapp_test DBPASS=password DBUSER=postgres
@@ -31,6 +31,10 @@ env:
       - ECCUBE_VERSION=3.0.12 DB=pgsql USER=postgres DBNAME=myapp_test DBPASS=password DBUSER=postgres
       - ECCUBE_VERSION=3.0.12 DB=sqlite
       # ec-cube 3.0.16
+      - ECCUBE_VERSION=3.0.16 DB=mysql USER=root DBNAME=myapp_test DBPASS=' ' DBUSER=root
+      - ECCUBE_VERSION=3.0.16 DB=pgsql USER=postgres DBNAME=myapp_test DBPASS=password DBUSER=postgres
+      - ECCUBE_VERSION=3.0.16 DB=sqlite
+      # ec-cube 3.0.17
       - ECCUBE_VERSION=3.0.16 DB=mysql USER=root DBNAME=myapp_test DBPASS=' ' DBUSER=root
       - ECCUBE_VERSION=3.0.16 DB=pgsql USER=postgres DBNAME=myapp_test DBPASS=password DBUSER=postgres
       - ECCUBE_VERSION=3.0.16 DB=sqlite
